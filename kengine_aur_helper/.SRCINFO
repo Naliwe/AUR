@@ -1,0 +1,12 @@
+pkgbase = kengine
+	pkgdesc = Lua helpers to create kengine C++ game engine projects
+	pkgver = 1.0
+	pkgrel = 1
+	url = https://github.com/phiste/kengine
+	license = GPL
+	makedepends = git
+	depends = luarocks
+	provides = kengine_create
+
+pkgname = kengine
+

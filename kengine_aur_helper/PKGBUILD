@@ -1,0 +1,48 @@
+# Maintainer: Naliwe <naliwe.gs@gmail.com>
+
+pkgname='kengine'
+pkgver=1.0
+pkgrel=1
+pkgdesc="Lua helpers to create kengine C++ game engine projects"
+arch=()
+url="https://github.com/phiste/kengine"
+license=('GPL')
+groups=()
+depends=('luarocks')
+makedepends=('git')
+provides=('kengine_create')
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+source=()
+noextract=()
+md5sums=() #generate with 'makepkg -g'
+
+_gitroot='https://github.com/Naliwe/AUR.git'
+_gitname='AUR'
+
+build() {
+  cd "$srcdir"
+  msg "Connecting to GIT server...."
+
+  if [[ -d "$_gitname" ]]; then
+    cd "$_gitname" && git pull origin
+    msg "The local files are updated."
+  else
+    git clone "$_gitroot" "$_gitname"
+  fi
+
+  msg "GIT checkout done or server timeout"
+}
+
+package() {
+  cd "$srcdir/kengine_aur_helper"
+
+  mkdir -p $pkgdir/usr/lib/kengine
+  mv ./* $pkgdir/usr/lib/kengine
+  ln -s /usr/lib/kengine/main.lua $pkgdir/usr/bin/kengine_create
+}
+
+# vim:set ts=2 sw=2 et:
