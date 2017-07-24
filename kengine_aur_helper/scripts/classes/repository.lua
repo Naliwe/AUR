@@ -50,14 +50,12 @@ local function _delGitFiles(path)
     for file in lfs.dir(path) do
         if (matchers[file]) then
             os.execute("rm -rf " .. path .. '/' .. file)
-        else
-            if file ~= "." and file ~= ".." then
-                local f = path .. '/' .. file
-                local attr = lfs.attributes(f)
+        elseif file ~= "." and file ~= ".." then
+            local f = path .. '/' .. file
+            local attr = lfs.attributes(f)
 
-                if attr.mode == "directory" then
-                    _delGitFiles(f)
-                end
+            if attr.mode == "directory" then
+                _delGitFiles(f)
             end
         end
     end

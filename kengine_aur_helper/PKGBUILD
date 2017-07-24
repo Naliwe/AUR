@@ -40,6 +40,9 @@ build() {
 package() {
   cd "$srcdir/kengine_aur_helper"
 
+  /usr/bin/luarocks install luafilesystem
+  /usr/bin/luarocks install argparser
+
   mkdir -p $pkgdir/usr/lib/kengine
   mv ./* $pkgdir/usr/lib/kengine
   ln -s /usr/lib/kengine/main.lua $pkgdir/usr/bin/kengine_create

@@ -1,4 +1,4 @@
-#!/usr/bin/env lua
+#!    /usr/bin/env lua
 
 --
 -- Created by IntelliJ IDEA.
@@ -24,9 +24,20 @@ parser:mutex(parser:option("-c --cache", "Where you want me to cache deps"):defa
     parser:flag("--no-cache", "Do not cache deps"):default(false))
 
 local args = parser:parse()
-local index = string.find(arg[0], "/[^/]*$")
+local attr = lfs.symlinkattributes(arg[0])
+local linkTarget = lfs.symlinkattributes(arg[0], "target")
+local index = 0
 
-lfs.chdir(string.sub(arg[0], 0, index))
+if (attr ~= nil) then
+    if (attr.mode == "link") then
+        index = string.find(attr.target, "/[^/]*$")
+        lfs.chdir(string.sub(attr.target, 0, index))
+    else
+        index = string.find(arg[0], "/[^/]*$")
+        lfs.chdir(string.sub(arg[0], 0, index))
+    end
+end
+
 
 require "classes.repository"
 
