@@ -10,11 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f5d73cf-a1ff-4ae2-bc3f-7d08ec65f673" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PKGBUILD" afterPath="$PROJECT_DIR$/PKGBUILD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.lua" afterPath="$PROJECT_DIR$/scripts/main.lua" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +39,7 @@
             <entry file="file://$PROJECT_DIR$/scripts/main.lua">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="920">
-                  <caret line="58" column="29" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+                  <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -616,12 +614,12 @@
       <workItem from="1499960344904" duration="9000" />
       <workItem from="1500664270821" duration="605000" />
       <workItem from="1503665523602" duration="12000" />
-      <workItem from="1503665560119" duration="2011000" />
+      <workItem from="1503665560119" duration="3037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40585000" />
+    <option name="totallyTimeSpent" value="41611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="21" width="1904" height="1044" extended-state="0" />
@@ -768,7 +766,7 @@
     <entry file="file://$PROJECT_DIR$/scripts/main.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
-          <caret line="58" column="29" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
           <folding />
         </state>
       </provider>
