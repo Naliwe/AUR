@@ -42,6 +42,10 @@ package() {
 
   mkdir -p $pkgdir/usr/lib/kengine
   mkdir -p $pkgdir/usr/bin/
+
+  make -C $srcdir/AUR/kengine_aur_helper/dependencies/luafilesystem
+  make install_aur -C $srcdir/AUR/kengine_aur_helper/dependencies/luafilesystem
+
   mv $srcdir/AUR/kengine_aur_helper/scripts/ $pkgdir/usr/lib/kengine
   ln -s /usr/lib/kengine/scripts/main.lua $pkgdir/usr/bin/kengine_create
 }
