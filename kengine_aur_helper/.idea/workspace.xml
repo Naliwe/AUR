@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f5d73cf-a1ff-4ae2-bc3f-7d08ec65f673" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PKGBUILD" afterPath="$PROJECT_DIR$/PKGBUILD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.lua" afterPath="$PROJECT_DIR$/scripts/main.lua" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -614,12 +613,12 @@
       <workItem from="1499960344904" duration="9000" />
       <workItem from="1500664270821" duration="605000" />
       <workItem from="1503665523602" duration="12000" />
-      <workItem from="1503665560119" duration="3037000" />
+      <workItem from="1503665560119" duration="3763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41611000" />
+    <option name="totallyTimeSpent" value="42337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="21" width="1904" height="1044" extended-state="0" />
