@@ -43,7 +43,7 @@ package() {
   mkdir -p $pkgdir/usr/lib/kengine
   mkdir -p $pkgdir/usr/bin/
   mv $srcdir/AUR/kengine_aur_helper/scripts/ $pkgdir/usr/lib/kengine
-  ln -s /usr/lib/kengine/main.lua $pkgdir/usr/bin/kengine_create
+  ln -s /usr/lib/kengine/scripts/main.lua $pkgdir/usr/bin/kengine_create
 }
 
 # vim:set ts=2 sw=2 et:
