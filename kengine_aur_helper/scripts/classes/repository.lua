@@ -32,9 +32,10 @@ function Repo:new(other)
 end
 
 local function _createTmpDir(repo)
-    if (lfs.attributes(repo.tmpDir) == nil) then
-        lfs.mkdir(repo.tmpDir)
+    if (lfs.attributes(repo.tmpDir) ~= nil) then
+        os.execute('rm -rf ' ..repo.tmpDir)
     end
+    lfs.mkdir(repo.tmpDir)
 end
 
 local function Set(list)
@@ -66,7 +67,7 @@ local function _populateRepo(repo)
 
     _createTmpDir(repo)
 
-    if (lfs.attributes(repo.cacheDir) ~= nil) then
+    if (repo.cached and lfs.attributes(repo.cacheDir) ~= nil) then
         os.execute("cp -r " .. repo.cacheDir .. "/" .. repo.remoteDir .. " " .. repo.localPath)
         return
     end

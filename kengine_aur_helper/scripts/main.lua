@@ -1,4 +1,4 @@
-#!    /usr/bin/env lua
+#!     /usr/bin/env lua
 
 --
 -- Created by IntelliJ IDEA.
@@ -9,8 +9,11 @@
 --
 --
 
+require "classes.repository"
+
 local lfs = require "lfs"
 local argparse = require "argparse"
+
 local parser = argparse()
 local savePath = lfs.currentdir()
 
@@ -26,8 +29,7 @@ parser:mutex(parser:option("-c --cache", "Where you want me to cache deps"):defa
 
 local args = parser:parse()
 local attr = lfs.symlinkattributes(arg[0])
-local linkTarget = lfs.symlinkattributes(arg[0], "target")
-local index = 0
+local index
 
 if (attr ~= nil) then
     if (attr.mode == "link") then
@@ -40,7 +42,6 @@ if (attr ~= nil) then
 end
 
 
-require "classes.repository"
 
 local path = ""
 
@@ -51,6 +52,7 @@ if (args.localPath ~= nil) then
         path = args.localPath
     end
 end
+
 
 r = Repo:new({
     remote = "git@github.com:Phiste/kengine.git",

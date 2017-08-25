@@ -11,7 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2f5d73cf-a1ff-4ae2-bc3f-7d08ec65f673" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PKGBUILD" afterPath="$PROJECT_DIR$/PKGBUILD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/classes/repository.lua" afterPath="$PROJECT_DIR$/scripts/classes/repository.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.lua" afterPath="$PROJECT_DIR$/scripts/main.lua" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +38,8 @@
           <file leaf-file-name="main.lua" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/main.lua">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="920">
-                  <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+                <state relative-caret-position="109">
+                  <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -51,8 +52,8 @@
           <file leaf-file-name="repository.lua" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/classes/repository.lua">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+                <state relative-caret-position="369">
+                  <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -84,13 +85,20 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/main.lua" />
         <option value="$PROJECT_DIR$/scripts/classes/test.lua" />
-        <option value="$PROJECT_DIR$/scripts/classes/repository.lua" />
         <option value="$PROJECT_DIR$/scripts/main.lua" />
+        <option value="$PROJECT_DIR$/scripts/classes/repository.lua" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -117,7 +125,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kengine_aur_helper" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="kengine_aur_helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kengine_aur_helper" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -126,7 +148,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Lua" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -150,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Lua Script.Default Run">
     <configuration name="Default Run" type="#com.sylvanaar.idea.Lua.run.LuaConfigurationType" factoryName="Lua Script">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="" />
@@ -613,16 +635,15 @@
       <workItem from="1499960344904" duration="9000" />
       <workItem from="1500664270821" duration="605000" />
       <workItem from="1503665523602" duration="12000" />
-      <workItem from="1503665560119" duration="3763000" />
+      <workItem from="1503665560119" duration="6518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42337000" />
+    <option name="totallyTimeSpent" value="45092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="21" width="1904" height="1044" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13421053" sideWeight="0.49614114" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -764,16 +785,16 @@
     <entry file="file://$APPLICATION_PLUGINS_DIR$/Lua/stdlibrary/io.lua" />
     <entry file="file://$PROJECT_DIR$/scripts/main.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        <state relative-caret-position="109">
+          <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/classes/repository.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="369">
+          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
           <folding />
         </state>
       </provider>
